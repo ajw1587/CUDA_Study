@@ -17,5 +17,5 @@ int main(void)
 	dim3 dimGrid(NUM_DATA / 256, 1, 1);
 	dim3 dimBlock(256, 1, 1);
 
-	vecAdd << <dimGrid, dimBlock >> > (d_a, d_b, d_c);
+	vecAdd << <dimGrid, dimBlock >> > (d_a, d_b, d_c);  
 }
